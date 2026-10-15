@@ -1,0 +1,1322 @@
+[
+  {
+    "id": 1,
+    "type": "choice",
+    "question": "During a routine inspection, a technician discovered that software that was installed on a computer was secretly collecting data about websites that were visited by users of the computer. Which type of threat is affecting this computer?",
+    "topic": "1.8.1",
+    "explanation": "Spyware is software that is installed on a network device and that collects information.",
+    "options": [
+      "DoS attack",
+      "identity theft",
+      "spyware",
+      "zero-day attack"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": 2,
+    "type": "choice",
+    "question": "Which term refers to a network that provides secure access to the corporate offices by suppliers, customers and collaborators?",
+    "topic": "1.4.4",
+    "explanation": "The term Internet refers to the worldwide collection of connected networks. Intranet refers to a private connection of LANs and WANS that belong to an organization and is designed to be accessible to the members of the organization, employees, or others with authorization. Extranets provide secure and safe access to suppliers, customers, and collaborators. Extendednet is not a type of network.",
+    "options": [
+      "Internet",
+      "intranet",
+      "extranet",
+      "extendednet"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": 3,
+    "type": "choice",
+    "question": "A large corporation has modified its network to allow users to access network resources from their personal laptops and smart phones. Which networking trend does this describe?",
+    "topic": "1.7.2",
+    "explanation": "BYOD allows end users to use personal tools to access the corporate network. Allowing this trend can have major impacts on a network, such as security and compatibility with corporate software and devices.",
+    "options": [
+      "cloud computing",
+      "online collaboration",
+      "bring your own device",
+      "video conferencing"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": 4,
+    "type": "choice",
+    "question": "What is an ISP?",
+    "topic": "1.5.1",
+    "explanation": "An ISP, or Internet Service Provider, is an organization that provides access to the Internet for businesses and individuals.",
+    "options": [
+      "It is a standards body that develops cabling and wiring standards for networking.",
+      "It is a protocol that establishes how computers within a local network communicate.",
+      "It is an organization that enables individuals and businesses to connect to the Internet.",
+      "It is a networking device that combines the functionality of several different networking devices in one."
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": 5,
+    "type": "match",
+    "question": "Match the requirements of a reliable network with the supporting network architecture. (Not all options are used.)",
+    "topic": "1.6.5",
+    "explanation": "Fault tolerance limits the impact of a failure through redundant links and devices. Scalability lets the network grow without degrading service for existing users. Security protects the network from unauthorized access. The remaining descriptions refer to Quality of Service (QoS).",
+    "pairs": [
+      {
+        "left": "Provide redundant links and devices.",
+        "right": "fault tolerance"
+      },
+      {
+        "left": "Expand the network without degrading the service for existing users.",
+        "right": "scalability"
+      },
+      {
+        "left": "Protect the network from unauthorized access.",
+        "right": "security"
+      }
+    ],
+    "distractors": [
+      "Match the type of communication with a specific priority.",
+      "Ensure that streaming data is provided over high speed links."
+    ]
+  },
+  {
+    "id": 6,
+    "type": "choice",
+    "question": "An employee at a branch office is creating a quote for a customer. In order to do this, the employee needs to access confidential pricing information from internal servers at the Head Office. What type of network would the employee access?",
+    "topic": "1.4.4",
+    "explanation": "Intranet is a term used to refer to a private connection of LANs and WANs that belongs to an organization. An intranet is designed to be accessible only by the organization's members, employees, or others with authorization.",
+    "options": [
+      "an intranet",
+      "the Internet",
+      "an extranet",
+      "a local area network"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 7,
+    "type": "choice",
+    "question": "Which statement describes the use of powerline networking technology?",
+    "topic": "1.7.8",
+    "explanation": "Powerline networking adds the ability to connect a device to the network using an adapter wherever there is an electrical outlet. The network uses existing electrical wiring to send data. It is not a replacement for physical cabling, but it can add functionality in places where wireless access points cannot be used or cannot reach devices.",
+    "options": [
+      "New “smart” electrical cabling is used to extend an existing home LAN.",
+      "A home LAN is installed without the use of physical cabling.",
+      "A device connects to an existing home LAN using an adapter and an existing electrical outlet.",
+      "Wireless access points use powerline adapters to distribute data through the home LAN."
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": 8,
+    "type": "choice",
+    "question": "A networking technician is working on the wireless network at a medical clinic. The technician accidentally sets up the wireless network so that patients can see the medical records data of other patients. Which of the four network characteristics has been violated in this situation?",
+    "topic": "1.1.8",
+    "explanation": "Network security includes protecting the confidentiality of data that is on the network. In this case, because confidential data has been made available to unauthorized users, the security characteristic of the network has failed.",
+    "options": [
+      "fault tolerance",
+      "scalability",
+      "security",
+      "Quality of Service (QoS)",
+      "reliability"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": 9,
+    "type": "match",
+    "question": "Match each characteristic to its corresponding Internet connectivity type. (Not all options are used.)",
+    "topic": "1.5.2",
+    "explanation": "DSL is an always-on, high bandwidth connection that runs over telephone lines. Cable uses the same coaxial cable that carries television signals into the home to provide Internet access. Dialup telephone is much slower than either DSL or cable, but is the least expensive option for home users because it can use any telephone line and a simple modem. Satellite requires a clear line of sight and is affected by trees and other obstructions. None of these typical home options use dedicated leased lines such as T1/E1 and T3/E3.",
+    "pairs": [
+      {
+        "left": "uses coaxial cable as a medium",
+        "right": "cable"
+      },
+      {
+        "left": "not suited for heavily wooded areas",
+        "right": "satellite"
+      },
+      {
+        "left": "typically has very low bandwidth",
+        "right": "dialup telephone"
+      },
+      {
+        "left": "high bandwidth connection that runs over telephone line",
+        "right": "DSL"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "type": "choice",
+    "question": "What two criteria are used to help select a network medium from various network media? (Choose two.)",
+    "topic": "2.6.2",
+    "explanation": "Criteria for choosing a network medium are the distance the selected medium can successfully carry a signal, the environment in which the selected medium is to be installed, the amount of data and the speed at which the data must be transmitted, and the cost of the medium and its installation.",
+    "options": [
+      "the types of data that need to be prioritized",
+      "the cost of the end devices utilized in the network",
+      "the distance the selected medium can successfully carry a signal",
+      "the number of intermediate devices installed in the network",
+      "the environment where the selected medium is to be installed"
+    ],
+    "correct": [
+      2,
+      4
+    ]
+  },
+  {
+    "id": 11,
+    "type": "choice",
+    "question": "What type of network traffic requires QoS?",
+    "topic": "1.6.4",
+    "explanation": "Video conferencing utilizes real-time audio and video communications. Both of these are time-sensitive and bandwidth-intensive forms of communication that require quality of service to be active on the network. QoS will ensure an uninterrupted user experience.",
+    "options": [
+      "email",
+      "on-line purchasing",
+      "video conferencing",
+      "wiki"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": 12,
+    "type": "choice",
+    "question": "A user is implementing security on a small office network. Which two actions would provide the minimum security requirements for this network? (Choose two.)",
+    "topic": "1.8.2",
+    "explanation": "Technically complex security measures such as intrusion prevention and intrusion prevention systems are usually associated with business networks rather than home networks. Installing antivirus software, antimalware software, and implementing a firewall will usually be the minimum requirements for home networks. Installing a home wireless network will not improve network security, and will require further security actions to be taken.",
+    "options": [
+      "implementing a firewall",
+      "installing a wireless network",
+      "installing antivirus software",
+      "implementing an intrusion detection system",
+      "adding a dedicated intrusion prevention device"
+    ],
+    "correct": [
+      0,
+      2
+    ]
+  },
+  {
+    "id": 13,
+    "type": "choice",
+    "question": "Passwords can be used to restrict access to all or parts of the Cisco IOS. Select the modes and interfaces that can be protected with passwords. (Choose three.)",
+    "topic": "2.4.3",
+    "explanation": "Access to the VTY and console interfaces can be restricted using passwords. Out-of-band management of the router can be restricted in both user EXEC and privileged EXEC modes.",
+    "options": [
+      "VTY interface",
+      "console interface",
+      "Ethernet interface",
+      "boot IOS mode",
+      "privileged EXEC mode",
+      "router configuration mode"
+    ],
+    "correct": [
+      0,
+      1,
+      4
+    ]
+  },
+  {
+    "id": 14,
+    "type": "choice",
+    "question": "Which interface allows remote management of a Layer 2 switch?",
+    "topic": "2.6.2",
+    "explanation": "In a Layer 2 switch, there is a switch virtual interface (SVI) that provides a means for remotely managing the device.",
+    "options": [
+      "the AUX interface",
+      "the console port interface",
+      "the switch virtual interface",
+      "the first Ethernet port interface"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": 15,
+    "type": "choice",
+    "question": "What function does pressing the Tab key have when entering a command in IOS?",
+    "topic": "2.3.5",
+    "explanation": "Pressing the Tab key after a command has been partially typed will cause the IOS to complete the rest of the command.",
+    "options": [
+      "It aborts the current command and returns to configuration mode.",
+      "It exits configuration mode and returns to user EXEC mode.",
+      "It moves the cursor to the beginning of the next line.",
+      "It completes the remainder of a partially typed word in a command."
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": 16,
+    "type": "choice",
+    "question": "While trying to solve a network issue, a technician made multiple changes to the current router configuration file. The changes did not solve the problem and were not saved. What action can the technician take to discard the changes and work with the file in NVRAM?",
+    "topic": "2.5.2",
+    "explanation": "The technician does not want to make any mistakes trying to remove all the changes that were done to the running configuration file. The solution is to reboot the router without saving the running configuration. The copy startup-config running-config command does not overwrite the running configuration file with the configuration file stored in NVRAM, but rather it just has an additive effect.",
+    "options": [
+      "Issue the reload command without saving the running configuration.",
+      "Delete the vlan.dat file and reboot the device.",
+      "Close and reopen the terminal emulation software.",
+      "Issue the copy startup-config running-config command."
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 17,
+    "type": "choice",
+    "question": "An administrator uses the Ctrl-Shift-6 key combination on a switch after issuing the ping command. What is the purpose of using these keystrokes?",
+    "topic": "2.3.5",
+    "explanation": "To interrupt an IOS process such as ping or traceroute, a user enters the Ctrl-Shift-6 key combination. Tab completes the remainder of parameters or arguments within a command. To exit from configuration mode to privileged mode use the Ctrl-Z keystroke. CTRL-R will redisplay the line just typed, thus making it easier for the user to press Enter and reissue the ping command.",
+    "options": [
+      "to restart the ping process",
+      "to interrupt the ping process",
+      "to exit to a different configuration mode",
+      "to allow the user to complete the command"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 18,
+    "type": "choice",
+    "question": "Refer to the exhibit. A network administrator is configuring access control to switch SW1. If the administrator uses a console connection to connect to the switch, which password is needed to access user EXEC mode?",
+    "topic": "2.4.3",
+    "explanation": "A console connection uses the password configured under \"line console 0\" (lineconin) to reach user EXEC mode. The VTY password (linevtyin) is used for Telnet/SSH, and the enable secret (secretin, which overrides enable password letmein) is needed to enter privileged EXEC mode.",
+    "options": [
+      "letmein",
+      "secretin",
+      "lineconin",
+      "linevtyin"
+    ],
+    "correct": [
+      2
+    ],
+    "exhibit": "SW1(config)# enable password letmein\nSW1(config)# enable secret secretin\nSW1(config)# line console 0\nSW1(config-line)# password lineconin\nSW1(config-line)# login\nSW1(config-line)# exit\nSW1(config)# line vty 0 15\nSW1(config-line)# password linevtyin\nSW1(config-line)# login\nSW1(config-line)# end\nSW1#",
+    "note": "Poprawiono wyjaśnienie: oryginał opisywał dostęp VTY/Telnet, a pytanie dotyczy połączenia konsolowego."
+  },
+  {
+    "id": 19,
+    "type": "choice",
+    "question": "A technician configures a switch with these commands:",
+    "topic": "2.7.4",
+    "explanation": "For a switch to have an IP address, a switch virtual interface must be configured. This allows the switch to be managed remotely over the network.",
+    "options": [
+      "Telnet access",
+      "SVI",
+      "password encryption",
+      "physical switchport access"
+    ],
+    "correct": [
+      1
+    ],
+    "exhibit": "SwitchA(config)# interface vlan 1\nSwitchA(config-if)# ip address 192.168.1.1 255.255.255.0\nSwitchA(config-if)# no shutdown",
+    "question2": "What is the technician configuring?"
+  },
+  {
+    "id": 20,
+    "type": "choice",
+    "question": "Which command or key combination allows a user to return to the previous level in the command hierarchy?",
+    "topic": "2.2.4",
+    "explanation": "End and CTRL-Z return the user to the privileged EXEC mode. Ctrl-C ends a command in process. The exit command returns the user to the previous level.",
+    "options": [
+      "end",
+      "exit",
+      "Ctrl-Z",
+      "Ctrl-C"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 21,
+    "type": "choice",
+    "question": "What are two characteristics of RAM on a Cisco device? (Choose two.)",
+    "topic": "2.5.1",
+    "explanation": "RAM stores data that is used by the device to support network operations. The running configuration is stored in RAM. This type of memory is considered volatile memory because data is lost during a power cycle. Flash memory stores the IOS and delivers a copy of the IOS into RAM when a device is powered on. Flash memory is nonvolatile since it retains stored contents during a loss of power.",
+    "options": [
+      "RAM provides nonvolatile storage.",
+      "The configuration that is actively running on the device is stored in RAM.",
+      "The contents of RAM are lost during a power cycle.",
+      "RAM is a component in Cisco switches but not in Cisco routers.",
+      "RAM is able to store multiple versions of IOS and configuration files."
+    ],
+    "correct": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": 22,
+    "type": "choice",
+    "question": "Which two host names follow the guidelines for naming conventions on Cisco IOS devices? (Choose two.)",
+    "topic": "2.4.1",
+    "explanation": "Some guidelines for naming conventions are that names should:\nStart with a letter\nContain no spaces\nEnd with a letter or digit\nUse only letters, digits, and dashes\nBe less than 64 characters in length",
+    "options": [
+      "Branch2!",
+      "RM-3-Switch-2A4",
+      "Floor(15)",
+      "HO Floor 17",
+      "SwBranch799"
+    ],
+    "correct": [
+      1,
+      4
+    ]
+  },
+  {
+    "id": 23,
+    "type": "choice",
+    "question": "How is SSH different from Telnet?",
+    "topic": "2.1.4",
+    "explanation": "SSH is the preferred protocol for connecting to a device operating system over the network because it is much more secure than Telnet. Both SSH and Telnet are used to connect to devices over the network, and so are both used in-band. PuTTY and Terra Term can be used to make both SSH and Telnet connections.",
+    "options": [
+      "SSH makes connections over the network, whereas Telnet is for out-of-band access.",
+      "SSH provides security to remote sessions by encrypting messages and using user authentication. Telnet is considered insecure and sends messages in plaintext.",
+      "SSH requires the use of the PuTTY terminal emulation program. Tera Term must be used to connect to devices through the use of Telnet.",
+      "SSH must be configured over an active network connection, whereas Telnet is used to connect to a device from a console connection."
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 24,
+    "type": "match",
+    "question": "An administrator is configuring a switch console port with a password. In what order will the administrator travel through the IOS modes of operation in order to reach the mode in which the configuration commands will be entered?",
+    "topic": "2.2.4",
+    "explanation": "The configuration mode that the administrator first encounters is user EXEC mode. After the enable command is entered, the next mode is privileged EXEC mode. From there, the configure terminal command is entered to move to global configuration mode. Finally, the administrator enters the line console 0 command to enter the mode in which the configuration will be entered.",
+    "pairs": [
+      {
+        "left": "first mode",
+        "right": "user EXEC mode"
+      },
+      {
+        "left": "second mode",
+        "right": "privileged EXEC mode"
+      },
+      {
+        "left": "third mode",
+        "right": "global configuration mode"
+      },
+      {
+        "left": "final mode",
+        "right": "line configuration mode"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "type": "choice",
+    "question": "What are three characteristics of an SVI? (Choose three.)",
+    "topic": "2.6.2",
+    "explanation": "Switches have one or more switch virtual interfaces (SVIs). SVIs are created in software since there is no physical hardware associated with them. Virtual interfaces provide a means to remotely manage a switch over a network that is using IP. Each switch comes with one SVI appearing in the default configuration \"out-of-the-box.\" The default SVI interface is VLAN1.",
+    "options": [
+      "It is designed as a security protocol to protect switch ports.",
+      "It is not associated with any physical interface on a switch.",
+      "It is a special interface that allows connectivity by different types of media.",
+      "It is required to allow connectivity by any device at any location.",
+      "It provides a means to remotely manage a switch.",
+      "It is associated with VLAN1 by default."
+    ],
+    "correct": [
+      1,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 26,
+    "type": "choice",
+    "question": "What command is used to verify the condition of the switch interfaces, including the status of the interfaces and a configured IP address?",
+    "topic": "2.8.1",
+    "explanation": "The show ip interface brief command is used to display a brief synopsis of the condition of the device interfaces. The ipconfig command is used to verify TCP/IP properties on a host. The ping command is used to verify Layer 3 connectivity. The traceroute command is used to trace the network path from source to destination.",
+    "options": [
+      "ipconfig",
+      "ping",
+      "traceroute",
+      "show ip interface brief"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": 27,
+    "type": "match",
+    "question": "Match the description with the associated IOS mode. (Not all options are used.)",
+    "topic": "2.2.4",
+    "explanation": "User EXEC mode is the first CLI mode and allows only basic monitoring commands (prompt \">\"). The enable command enters privileged EXEC mode (prompt \"#\"). The configure terminal command enters global configuration mode, where changes affect the device as a whole. The vty password is set in line configuration mode, which is not among the options.",
+    "pairs": [
+      {
+        "left": "limited number of basic monitoring commands",
+        "right": "user EXEC mode"
+      },
+      {
+        "left": "the first entrance into the CLI of an IOS device",
+        "right": "user EXEC mode"
+      },
+      {
+        "left": "accessed by entering the enable command",
+        "right": "privileged EXEC mode"
+      },
+      {
+        "left": "identified by a prompt ending with the # character",
+        "right": "privileged EXEC mode"
+      },
+      {
+        "left": "changes made affect the operation of the device as a whole",
+        "right": "global configuration mode"
+      },
+      {
+        "left": "accessed by entering the configure terminal command",
+        "right": "global configuration mode"
+      },
+      {
+        "left": "used to enable the password for vty lines",
+        "right": null
+      }
+    ],
+    "note": "Pary odtworzone z obrazka na stronie źródłowej (w HTML nie było tekstu)."
+  },
+  {
+    "id": 28,
+    "type": "match",
+    "question": "Match the definitions to their respective CLI hot keys and shortcuts. (Not all options are used.)",
+    "topic": "2.3.5",
+    "explanation": "Tab completes a partially typed command or keyword; Space bar shows the next screen; ? gives context-sensitive help; Up Arrow scrolls back through previously entered commands; Ctrl-Shift-6 aborts commands such as ping and traceroute.",
+    "pairs": [
+      {
+        "left": "provides context-sensitive help",
+        "right": "?"
+      },
+      {
+        "left": "displays the next screen",
+        "right": "Space bar"
+      },
+      {
+        "left": "completes abbreviated commands and parameters",
+        "right": "Tab"
+      },
+      {
+        "left": "scrolls backwards through previously entered commands",
+        "right": "Up Arrow"
+      },
+      {
+        "left": "aborts commands such as trace and ping",
+        "right": "Ctrl-Shift-6"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "type": "choice",
+    "question": "In the show running-config command, which part of the syntax is represented by running-config ?",
+    "topic": "2.3.1",
+    "explanation": "The first part of the syntax, show, is the command, and the second part of the syntax, running-config, is the keyword. The keyword specifies what should be displayed as the output of the show command.",
+    "options": [
+      "the command",
+      "a keyword",
+      "a variable",
+      "a prompt"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 30,
+    "type": "choice",
+    "question": "After making configuration changes on a Cisco switch, a network administrator issues a copy running-config startup-config command. What is the result of issuing this command?",
+    "topic": "2.5.2",
+    "explanation": "With the copy running-config startup-config command, the content of the current operating configuration replaces the startup configuration file stored in NVRAM. The configuration file saved in NVRAM will be loaded when the device is restarted.",
+    "options": [
+      "The new configuration will be stored in flash memory.",
+      "The new configuration will be loaded if the switch is restarted.",
+      "The current IOS file will be replaced with the newly configured file.",
+      "The configuration changes will be removed and the original configuration will be restored."
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 31,
+    "type": "choice",
+    "question": "What command will prevent all unencrypted passwords from displaying in plain text in a configuration file?",
+    "topic": "2.4.4",
+    "explanation": "To prevent all configured passwords from appearing in plain text in configuration files, an administrator can execute the service password-encryption command. This command encrypts all configured passwords in the configuration file.",
+    "options": [
+      "(config)# enable password secret",
+      "(config)# enable secret Secret_Password",
+      "(config-line)# password secret",
+      "(config)# service password-encryption",
+      "(config)# enable secret Encrypted_Password"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": 32,
+    "type": "choice",
+    "question": "A network administrator enters the service password-encryption command into the configuration mode of a router. What does this command accomplish?",
+    "topic": "2.4.4",
+    "explanation": "The startup-config and running-config files display most passwords in plaintext. Use the service password-encryption global config command to encrypt all plaintext passwords in these files.",
+    "options": [
+      "This command encrypts passwords as they are transmitted across serial WAN links.",
+      "This command prevents someone from viewing the running configuration passwords.",
+      "This command enables a strong encryption algorithm for the enable secret password command.",
+      "This command automatically encrypts passwords in configuration files that are currently stored in NVRAM.",
+      "This command provides an exclusive encrypted password for external service personnel who are required to do router maintenance."
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 33,
+    "type": "choice",
+    "question": "What method can be used by two computers to ensure that packets are not dropped because too much data is being sent too quickly?",
+    "topic": "3.1.9",
+    "explanation": "In order for two computers to be able to communicate effectively, there must be a mechanism that allows both the source and destination to set the timing of the transmission and receipt of data. Flow control allows for this by ensuring that data is not sent too fast for it to be received properly.",
+    "options": [
+      "encapsulation",
+      "flow control",
+      "access method",
+      "response timeout"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 34,
+    "type": "choice",
+    "question": "Which statement accurately describes a TCP/IP encapsulation process when a PC is sending data to the network?",
+    "topic": "3.6.4",
+    "explanation": "When the data is traveling from the PC to the network, the transport layer sends segments to the internet layer. The internet layer sends packets to the network access layer, which creates frames and then converts the frames to bits. The bits are released to the network media.",
+    "options": [
+      "Data is sent from the internet layer to the network access layer.",
+      "Packets are sent from the network access layer to the transport layer.",
+      "Segments are sent from the transport layer to the internet layer.",
+      "Frames are sent from the network access layer to the internet layer."
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": 35,
+    "type": "choice",
+    "question": "What three application layer protocols are part of the TCP/IP protocol suite? (Choose three.)",
+    "topic": "3.3.4",
+    "explanation": "DNS, DHCP, and FTP are all application layer protocols in the TCP/IP protocol suite. ARP and PPP are network access layer protocols, and NAT is an internet layer protocol in the TCP/IP protocol suite.",
+    "options": [
+      "ARP",
+      "DHCP",
+      "DNS",
+      "FTP",
+      "NAT",
+      "PPP"
+    ],
+    "correct": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": 36,
+    "type": "match",
+    "question": "Match the description to the organization. (Not all options are used.)",
+    "topic": "3.3.2 and 3.4.2",
+    "explanation": "ISOC (Internet Society) promotes the open development and use of the Internet. ISO develops international standards and is known for the OSI model. IANA manages IP address allocation, domain names and protocol identifiers. EIA is not used – it is known for standards related to electrical wiring, connectors and 19-inch racks.",
+    "pairs": [
+      {
+        "left": "This organization promotes the open development, evolution, and use of the Internet throughout the world.",
+        "right": "ISOC"
+      },
+      {
+        "left": "This organization is the largest developer of international standards in the world for a wide variety of products and services. It is known for its Open Systems Interconnection (OSI) reference model.",
+        "right": "ISO"
+      },
+      {
+        "left": "This organization is responsible for overseeing and managing IP address allocation, domain name management, and protocol identifiers.",
+        "right": "IANA"
+      }
+    ],
+    "distractors": [
+      "EIA"
+    ],
+    "note": "Pary odtworzone z obrazka na stronie źródłowej (w HTML nie było tekstu)."
+  },
+  {
+    "id": 37,
+    "type": "choice",
+    "question": "Which name is assigned to the transport layer PDU?",
+    "topic": "3.6.3",
+    "explanation": "Application data is passed down the protocol stack on its way to be transmitted across the network media. During the process, various protocols add information to it at each level. At each stage of the process, a PDU (protocol data unit) has a different name to reflect its new functions. The PDUs are named according to the protocols of the TCP/IP suite:\nData - The general term for the PDU used at the application layer.\nSegment - transport layer PDU\nPacket - network layer PDU\nFrame – data link layer PDU\nBits - A physical layer PDU used when physically transmitting data over the medium",
+    "options": [
+      "bits",
+      "data",
+      "frame",
+      "packet",
+      "segment"
+    ],
+    "correct": [
+      4
+    ]
+  },
+  {
+    "id": 38,
+    "type": "choice",
+    "question": "When IPv4 addressing is manually configured on a web server, which property of the IPv4 configuration identifies the network and host portion for an IPv4 address?",
+    "topic": "2.7.1",
+    "explanation": "The subnet mask determines which part of an IPv4 address is the network portion and which part is the host portion.",
+    "options": [
+      "DNS server address",
+      "subnet mask",
+      "default gateway",
+      "DHCP server address"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 39,
+    "type": "choice",
+    "question": "What process involves placing one PDU inside of another PDU?",
+    "topic": "3.6.3",
+    "explanation": "When a message is placed inside of another message, this is known as encapsulation. On networks, encapsulation takes place when one protocol data unit is carried inside of the data field of the next lower protocol data unit.",
+    "options": [
+      "encapsulation",
+      "encoding",
+      "segmentation",
+      "flow control"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 40,
+    "type": "choice",
+    "question": "What layer is responsible for routing messages through an internetwork in the TCP/IP model?",
+    "topic": "3.5.4",
+    "explanation": "The TCP/IP model consists of four layers: application, transport, internet, and network access. Of these four layers, it is the internet layer that is responsible for routing messages. The session layer is not part of the TCP/IP model but is rather part of the OSI model.",
+    "options": [
+      "internet",
+      "transport",
+      "network access",
+      "session"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 41,
+    "type": "match",
+    "question": "For the TCP/IP protocol suite, what is the correct order of events when a Telnet message is being prepared to be sent over the network?",
+    "topic": "3.6.4",
+    "explanation": "Encapsulation goes from the top layer down: the application layer passes the Telnet data, the transport layer adds the TCP header (segment), the internet layer adds the IP header (packet), and finally the network access layer adds the Ethernet header (frame).",
+    "pairs": [
+      {
+        "left": "The Telnet-formatted data is provided to the next layer.",
+        "right": "First"
+      },
+      {
+        "left": "The TCP header is added.",
+        "right": "Second"
+      },
+      {
+        "left": "The IP header is added.",
+        "right": "Third"
+      },
+      {
+        "left": "The Ethernet header is added.",
+        "right": "Fourth"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "type": "choice",
+    "question": "Which PDU format is used when bits are received from the network medium by the NIC of a host?",
+    "topic": "3.6.3",
+    "explanation": "When received at the physical layer of a host, the bits are formatted into a frame at the data link layer. A packet is the PDU at the network layer. A segment is the PDU at the transport layer. A file is a data structure that may be used at the application layer.",
+    "options": [
+      "file",
+      "frame",
+      "packet",
+      "segment"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 43,
+    "type": "choice",
+    "question": "Refer to the exhibit. ServerB is attempting to contact HostA. Which two statements correctly identify the addressing that ServerB will generate in the process? (Choose two.)",
+    "topic": "3.7.2",
+    "explanation": "In order to send data to HostA, ServerB will generate a packet that contains the IP address of the destination device on the remote network and a frame that contains the MAC address of the default gateway device on the local network.",
+    "options": [
+      "ServerB will generate a packet with the destination IP address of RouterB.",
+      "ServerB will generate a frame with the destination MAC address of SwitchB.",
+      "ServerB will generate a packet with the destination IP address of RouterA.",
+      "ServerB will generate a frame with the destination MAC address of RouterB.",
+      "ServerB will generate a packet with the destination IP address of HostA.",
+      "ServerB will generate a frame with the destination MAC address of RouterA."
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "exhibit": "HostA — SwitchA — RouterA ~~(WAN)~~ RouterB — SwitchB — ServerB"
+  },
+  {
+    "id": 44,
+    "type": "choice",
+    "question": "Which method allows a computer to react accordingly when it requests data from a server and the server takes too long to respond?",
+    "topic": "3.1.9",
+    "explanation": "If a computer makes a request and does not hear a response within an acceptable amount of time, the computer assumes that no answer is coming and reacts accordingly.",
+    "options": [
+      "encapsulation",
+      "flow control",
+      "access method",
+      "response timeout"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": 45,
+    "type": "choice",
+    "question": "A web client is receiving a response for a web page from a web server. From the perspective of the client, what is the correct order of the protocol stack that is used to decode the received transmission?",
+    "topic": "3.6.3",
+    "explanation": "1. HTTP governs the way that a web server and client interact.\n2. TCP manages individual conversations between web servers and clients.\n3. IP is responsible for delivery across the best path to the destination.\n4. Ethernet takes the packet from IP and formats it for transmission.",
+    "options": [
+      "Ethernet, IP, TCP, HTTP",
+      "HTTP, TCP, IP, Ethernet",
+      "Ethernet, TCP, IP, HTTP",
+      "HTTP, Ethernet, IP, TCP"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 46,
+    "type": "choice",
+    "question": "Which two OSI model layers have the same functionality as a single layer of the TCP/IP model? (Choose two.)",
+    "topic": "3.5.4",
+    "explanation": "The OSI data link and physical layers together are equivalent to the TCP/IP network access layer. The OSI transport layer is functionally equivalent to the TCP/IP transport layer, and the OSI network layer is equivalent to the TCP/IP internet layer. The OSI application, presentation, and session layers are functionally equivalent to the application layer within the TCP/IP model.",
+    "options": [
+      "data link",
+      "network",
+      "physical",
+      "session",
+      "transport"
+    ],
+    "correct": [
+      0,
+      2
+    ]
+  },
+  {
+    "id": 47,
+    "type": "choice",
+    "question": "At which layer of the OSI model would a logical address be added during encapsulation?",
+    "topic": "3.7.2",
+    "explanation": "Logical addresses, also known as IP addresses, are added at the network layer. Physical addresses are added at the data link layer. Port addresses are added at the transport layer. No addresses are added at the physical layer.",
+    "options": [
+      "physical layer",
+      "data link layer",
+      "network layer",
+      "transport layer"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": 48,
+    "type": "choice",
+    "question": "What is a characteristic of multicast messages?",
+    "topic": "3.1.9",
+    "explanation": "Multicast is a one-to-many type of communication. Multicast messages are addressed to a specific multicast group.",
+    "options": [
+      "They are sent to a select group of hosts.",
+      "They are sent to all hosts on a network.",
+      "They must be acknowledged.",
+      "They are sent to a single destination."
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 49,
+    "type": "choice",
+    "question": "Which statement is correct about network protocols?",
+    "topic": "3.1.7",
+    "explanation": "Network protocols are implemented in hardware, or software, or both. They interact with each other within different layers of a protocol stack. Protocols have nothing to do with the installation of the network equipment. Network protocols are required to exchange information between source and destination devices in both local and remote networks.",
+    "options": [
+      "Network protocols define the type of hardware that is used and how it is mounted in racks.",
+      "They define how messages are exchanged between the source and the destination.",
+      "They all function in the network access layer of TCP/IP.",
+      "They are only required for exchange of messages between devices on remote networks."
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 50,
+    "type": "choice",
+    "question": "What is an advantage of network devices using open standard protocols?",
+    "topic": "3.4.1",
+    "explanation": "An advantage of network devices implementing open standard protocols, such as from the TCP/IP suite, is that clients and servers running different operating systems can communicate with each other. Open standard protocols facilitate innovation and competition between vendors and across markets, and can reduce the occurrence of monopolies in networking markets.",
+    "options": [
+      "Network communications is confined to data transfers between devices from the same vendor.",
+      "A client host and a server running different operating systems can successfully exchange data.",
+      "Internet access can be controlled by a single ISP in each market.",
+      "Competition and innovation are limited to specific types of products."
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 51,
+    "type": "choice",
+    "question": "Which device performs the function of determining the path that messages should take through internetworks?",
+    "topic": "1.2.4",
+    "explanation": "A router is used to determine the path that the messages should take through the network. A firewall is used to filter incoming and outgoing traffic. A DSL modem is used to provide Internet connection for a home or an organization.",
+    "options": [
+      "a router",
+      "a firewall",
+      "a web server",
+      "a DSL modem"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 52,
+    "type": "choice",
+    "question": "Packet Tracer activity: PC0 is connected to Switch0. What is the IP address of the switch virtual interface (SVI) on Switch0?",
+    "topic": "2.7.4",
+    "explanation": "After the enable command is issued, the show running-configuration command or the show ip interfaces brief command will display the IP address of the switch virtual interface (SVI).",
+    "options": [
+      "192.168.5.10",
+      "192.168.10.5",
+      "192.168.10.1",
+      "192.168.5.0"
+    ],
+    "correct": [
+      0
+    ],
+    "note": "Nie da się zweryfikować bez pliku Packet Tracer (.pka) – odpowiedź pochodzi ze strony źródłowej.",
+    "unverified": true
+  },
+  {
+    "id": 53,
+    "type": "choice",
+    "question": "Why would a Layer 2 switch need an IP address?",
+    "topic": "2.6.2",
+    "explanation": "A switch, as a Layer 2 device, does not need an IP address to transmit frames to attached devices. However, when a switch is accessed remotely through the network, it must have a Layer 3 address. The IP address must be applied to a virtual interface rather than to a physical interface. Routers, not switches, function as default gateways.",
+    "options": [
+      "to enable the switch to send broadcast frames to attached PCs",
+      "to enable the switch to function as a default gateway",
+      "to enable the switch to be managed remotely",
+      "to enable the switch to receive frames from attached PCs"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": 54,
+    "type": "choice",
+    "question": "Refer to the exhibit. An administrator is trying to configure the switch but receives the error message that is displayed in the exhibit. What is the problem?",
+    "topic": "2.2.1",
+    "explanation": "In order to enter global configuration mode, the command configure terminal, or a shortened version such as config t, must be entered from privileged EXEC mode. In this scenario the administrator is in user EXEC mode, as indicated by the > symbol after the hostname. The administrator would need to use the enable command to move into privileged EXEC mode before entering the configure terminal command.",
+    "options": [
+      "The entire command, configure terminal, must be used.",
+      "The administrator is already in global configuration mode.",
+      "The administrator must first enter privileged EXEC mode before issuing the command.",
+      "The administrator must connect via the console port to access global configuration mode."
+    ],
+    "correct": [
+      2
+    ],
+    "exhibit": "Switch1> config t\n          ^\n% Invalid input detected at '^' marker."
+  },
+  {
+    "id": 55,
+    "type": "choice",
+    "question": "What term describes a network owned by one organization that provides safe and secure access to individuals who work for a different organization?",
+    "topic": "1.4.4",
+    "explanation": "The term extranet describes a controlled and private network infrastructure owned by a single organization that is purposely built to grant secure, limited access to external individuals who work for completely different organizations or business entities.\nAn extranet is typically deployed to facilitate seamless collaboration with external stakeholders such as trusted suppliers, vendors, business partners, or high-priority clients. It allows them to access specific internal resources and files safely without exposing the core corporate network to broader security risks.",
+    "options": [
+      "extranet",
+      "cloud",
+      "BYOD",
+      "quality of service"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 56,
+    "type": "choice",
+    "question": "What term describes storing personal files on servers over the internet to provide access anywhere, anytime, and on any device?",
+    "topic": "1.7.6",
+    "explanation": "The term cloud (or cloud computing) refers to the practice of storing, managing, and processing data on remote servers hosted on the Internet, rather than on a local hard drive. This architecture allows users to seamlessly upload and retrieve their personal files, applications, and services from any geographical location, at any given time, and across any internet-enabled device.",
+    "options": [
+      "cloud",
+      "BYOD",
+      "quality of service",
+      "converged network"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 57,
+    "type": "choice",
+    "question": "What term describes a network where one computer can be both client and server?",
+    "topic": "1.2.2",
+    "explanation": "The term peer-to-peer (P2P) describes a network model where every interconnected computer can function as both a client and a server simultaneously.\nIn this specific architecture, there is no requirement for a centralized or dedicated server. For instance, a computer acts as a server when it shares a local file or a connected printer with other users, and at the same time, it operates as a client when retrieving a shared document stored on another workstation. This setup is highly cost-effective for home environments or small offices, though it has distinct limitations regarding scalability and centralized security management.",
+    "options": [
+      "peer-to-peer",
+      "cloud",
+      "BYOD",
+      "quality of service"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 58,
+    "type": "choice",
+    "question": "What term describes a type of network used by people who work from home or from a small remote office?",
+    "topic": "1.4.1",
+    "explanation": "The term SOHO stands for Small Office, Home Office. It describes a specific category of Local Area Network (LAN) engineered to support individuals working remotely from home or operating within a small-scale business environment with a limited number of end devices.\nThese networks are highly cost-effective and typically rely on a single, integrated multi-function device (a standard home router) that simultaneously provides switching capabilities, wireless access (Wi-Fi), and routing functions to grant Internet access and enable local resource sharing.",
+    "options": [
+      "SOHO network",
+      "BYOD",
+      "quality of service",
+      "converged network"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 59,
+    "type": "choice",
+    "question": "What term describes a computing model where server software runs on dedicated computers?",
+    "topic": "1.2.2",
+    "explanation": "In the client/server model, server software runs on dedicated computers that serve requests from clients. In a peer-to-peer network, by contrast, one computer can be both client and server.",
+    "options": [
+      "client/server",
+      "internet",
+      "intranet",
+      "extranet"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 61,
+    "type": "choice",
+    "question": "What term describes a technology that allows devices to connect to the LAN using an electrical outlet?",
+    "topic": "1.7.8",
+    "explanation": "Powerline networking is a technology that allows data to be transmitted over an object's existing electrical wiring. By using specialized powerline adapters plugged directly into any standard electrical outlet, devices can seamlessly connect to the local area network (LAN). This approach effectively turns standard electrical infrastructure into network data channels without requiring extra Ethernet cabling.",
+    "options": [
+      "powerline networking",
+      "internet",
+      "intranet",
+      "extranet"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 62,
+    "type": "choice",
+    "question": "What term describes a policy that allows network devices to manage the flow of data to give priority to voice and video?",
+    "topic": "1.6.4",
+    "explanation": "Quality of Service (QoS) is a network policy that enables devices to manage data traffic flows by prioritizing bandwidth. It ensures that time-sensitive, real-time communications like voice and video are given higher priority over standard data traffic. This mechanism significantly reduces latency and jitter, maintaining acceptable transmission quality even during network congestion. Other options like Internet, Intranet, or Extranet merely define the scope or boundaries of network access.",
+    "options": [
+      "quality of service",
+      "internet",
+      "intranet",
+      "extranet"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 63,
+    "type": "choice",
+    "question": "What term describes a private collection of LANs and WANs that belongs to an organization?",
+    "topic": "1.4.4",
+    "explanation": "An intranet is a private collection of LANs and WANs that belongs to an organization. It is designed to be accessible only by the organization's members, employees, or others with explicit authorization to securely share internal data and resources.",
+    "options": [
+      "intranet",
+      "internet",
+      "extranet",
+      "peer-to-peer"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 64,
+    "type": "choice",
+    "question": "What term describes the ability to use personal devices across a business or campus network?",
+    "topic": "1.7.2",
+    "explanation": "The term BYOD (which stands for Bring Your Own Device) describes the growing trend and corporate policy where users, employees, or students are officially permitted to utilize their personal tech devices (such as laptops, smartphones, or tablets) to connect to a corporate or campus network to access internal organizational resources.",
+    "options": [
+      "BYOD",
+      "internet",
+      "intranet",
+      "extranet"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 65,
+    "type": "choice",
+    "question": "At which OSI layer is a source IP address added to a PDU during the encapsulation process?",
+    "topic": "3.6.4",
+    "explanation": "The source and destination IP addresses (logical addresses) are added at the network layer (Layer 3), creating a packet.",
+    "options": [
+      "network layer",
+      "data link layer",
+      "transport layer",
+      "application layer"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 66,
+    "type": "choice",
+    "question": "At which OSI layer is a destination port number added to a PDU during the encapsulation process?",
+    "topic": "3.6.3",
+    "explanation": "The transport layer (Layer 4 of the OSI model) is responsible for establishing a temporary communication session between two applications and transferring data between them reliably.\nDuring the encapsulation process, as data moves down from the application layer, the transport layer breaks it into smaller pieces called segments (PDU). It is exactly at this stage that a header containing both the source port number and the destination port number is added. The destination port number is critical because it tells the receiving device exactly which specific upper-layer application or service (such as HTTP on port 80, HTTPS on port 443, or DNS on port 53) should receive the data.",
+    "options": [
+      "transport layer",
+      "data link layer",
+      "network layer",
+      "application layer"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 67,
+    "type": "choice",
+    "question": "At which OSI layer is data added to a PDU during the encapsulation process?",
+    "topic": "3.6.3",
+    "explanation": "The application layer (Layer 7 of the OSI model) is the starting point where data is generated by user interactions or software applications (such as web browsers or email clients).\nDuring the encapsulation process, this layer takes the raw user information and formats it according to the specific protocol in use (such as HTTP, FTP, or SMTP), creating the initial PDU known simply as data. This data PDU is then passed down to the lower layers of the OSI stack, where it will sequentially receive headers and trailers (becoming segments, packets, and frames) to prepare it for physical transmission.",
+    "options": [
+      "application layer",
+      "data link layer",
+      "network layer",
+      "transport layer"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 68,
+    "type": "choice",
+    "question": "At which OSI layer is a source IP address added to a PDU during the encapsulation process?",
+    "topic": "3.6.4",
+    "explanation": "The network layer (Layer 3 of the OSI model) is responsible for end-to-end packet delivery across multiple interconnected networks.\nDuring the encapsulation process, when data from the transport layer arrives at the network layer, it is packaged into protocol data units called packets (PDUs). At this stage, a Layer 3 network header is attached, which strictly includes both the source IP address (identifying the original sender) and the destination IP address (identifying the final receiver). This logical addressing allows intermediate routers to successfully inspect the information and forward the data along the best path toward its final destination.",
+    "options": [
+      "network layer",
+      "data link layer",
+      "application layer",
+      "presentation layer"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 69,
+    "type": "choice",
+    "question": "Which of the following is the name for all computers connected to a network that participate directly in network communication?",
+    "topic": "1.2.1",
+    "explanation": "Hosts are all computers connected to a network that participate directly in network communication.",
+    "options": [
+      "Servers",
+      "Intermediary device",
+      "Host",
+      "media"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": 70,
+    "type": "choice",
+    "question": "At which OSI layer is a destination IP address added to a PDU during the encapsulation process?",
+    "topic": "3.6.3",
+    "explanation": "The network layer (Layer 3 of the OSI model) is responsible for logical addressing and routing data across different interconnected networks.\nDuring the encapsulation process, as data segments move down from the transport layer, the network layer packages them into protocol data units called packets (PDU). It is exactly at this stage that a network header containing both the source IP address and the destination IP address is added. The destination IP address is critical because it allows intermediate routers to make proper forwarding decisions, ensuring the packet is routed through the correct path until it reaches its ultimate destination.",
+    "options": [
+      "network layer",
+      "application layer",
+      "transport layer",
+      "presentation layer"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 71,
+    "type": "choice",
+    "question": "At which OSI layer is a source MAC address added to a PDU during the encapsulation process?",
+    "topic": "3.6.3",
+    "explanation": "The data link layer (Layer 2 of the OSI model) is responsible for preparing data for physical transmission across local network media and controlling access to those media.\nDuring the encapsulation process, as IP packets move down from the network layer (Layer 3), the data link layer packages them into protocol data units called frames (PDUs). It is exactly at this stage that a data link header is attached, which includes both the source MAC address (the physical address of the sending device's NIC) and the destination MAC address (the next physical hop on the local network). This allows local network hardware, such as switches, to successfully identify the immediate sender and receiver within the same local network segment.",
+    "options": [
+      "data link layer",
+      "application layer",
+      "transport layer",
+      "presentation layer"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 72,
+    "type": "choice",
+    "question": "At which OSI layer is a source port number added to a PDU during the encapsulation process?",
+    "topic": "3.6.3",
+    "explanation": "The transport layer (Layer 4 of the OSI model) is responsible for managing data flow and ensuring that applications on both ends of the network can communicate seamlessly.\nDuring the encapsulation process, data moving down from the application layer is segmented into smaller protocol data units called segments (PDUs). It is precisely at this level that a transport header is attached, which includes both the source port number and the destination port number. The source port number is dynamically assigned by the sending device to uniquely identify the local application session initiating the communication, ensuring that return traffic is directed back to the correct software or service.",
+    "options": [
+      "transport layer",
+      "application layer",
+      "network layer",
+      "presentation layer",
+      "data link layer"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 73,
+    "type": "choice",
+    "question": "At which OSI layer is a destination MAC address added to a PDU during the encapsulation process?",
+    "topic": "3.6.3",
+    "explanation": "The source and destination MAC addresses (physical addresses) are added at the data link layer (Layer 2), creating a frame.",
+    "options": [
+      "data link layer",
+      "transport layer",
+      "application layer",
+      "network layer"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 74,
+    "type": "choice",
+    "question": "When data is encoded as pulses of light, which media is being used to transmit the data?",
+    "topic": "1.2.5",
+    "explanation": "Fiber-optic cable carries data encoded as pulses of light. Copper cable uses electrical pulses, and wireless uses electromagnetic waves.",
+    "options": [
+      "Wireless",
+      "Fiber-optic cable",
+      "Copper cable"
+    ],
+    "correct": [
+      1
+    ],
+    "note": "Poprawiono literówkę w odpowiedzi (\"Fire optic\" → \"Fiber-optic\")."
+  },
+  {
+    "id": 75,
+    "type": "choice",
+    "question": "Which two devices are intermediary devices? (Choose two.)",
+    "topic": "1.2.4 and 1.3.1",
+    "explanation": "Routers and switches are intermediary devices.",
+    "options": [
+      "Host",
+      "Router",
+      "Switch",
+      "Servers"
+    ],
+    "correct": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": 76,
+    "type": "choice",
+    "question": "A college is building a new dormitory on its campus. Workers are digging in the ground to install a new water pipe for the dormitory. A worker accidentally damages a fiber optic cable that connects two of the existing dormitories to the campus data center. Although the cable has been cut, students in the dormitories only experience a very short interruption of network services. What characteristic of the network is shown here?",
+    "topic": "1.6.2",
+    "explanation": "Fault tolerance is the characteristic of a network which allows it to quickly respond to failures of network devices, media, or services. Quality of service refers to the measures taken to ensure that network traffic requiring higher throughput receives the required network resources. Scalability refers to the ability of the network to grow to accommodate new requirements. Security refers to protecting networks and data from theft, alteration, or destruction. Integrity refers to the completeness of something and is generally not used as a characteristic of networks in the same way as the other terms.",
+    "options": [
+      "quality of service (QoS)",
+      "scalability",
+      "security",
+      "fault tolerance",
+      "integrity"
+    ],
+    "correct": [
+      3
+    ]
+  }
+]
