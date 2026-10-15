@@ -51,9 +51,9 @@ export default function App() {
 
       {screen === 'home' && (
         <main className="home">
-          <h1>Basic Network Connectivity and Communications</h1>
+          <h1>Siskoł Nauka</h1>
           <p className="lead">
-            {questions.length} pytań z egzaminu CCNA 1 v7 (moduły 1–3) z odpowiedziami i
+            {questions.length} pytań z egzaminu CCNA 1 v7, moduły 1–3: Basic Network Connectivity and Communications, z odpowiedziami i
             wyjaśnieniami. Odpowiedzi zostały zweryfikowane.
           </p>
 
