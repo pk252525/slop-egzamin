@@ -44,16 +44,16 @@ export default function App() {
     <div className="app">
       <header>
         <button className="brand" onClick={() => setScreen('home')}>
-          slop-egzamin
+          grypser cisco
         </button>
         <span className="subtitle">CCNA 1 v7 · Modules 1–3</span>
       </header>
 
       {screen === 'home' && (
         <main className="home">
-          <h1>Siskoł Nauka</h1>
+          <h1>Basic Network Connectivity and Communications</h1>
           <p className="lead">
-            {questions.length} pytań z egzaminu CCNA 1 v7, moduły 1–3: Basic Network Connectivity and Communications, z odpowiedziami i
+            {questions.length} pytań z egzaminu CCNA 1 v7 (moduły 1–3) z odpowiedziami i
             wyjaśnieniami. Odpowiedzi zostały zweryfikowane.
           </p>
 
