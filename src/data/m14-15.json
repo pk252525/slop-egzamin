@@ -1,0 +1,1053 @@
+[
+  {
+    "id": 1,
+    "type": "choice",
+    "question": "Which action is performed by a client when establishing communication with a server via the use of UDP at the transport layer?",
+    "topic": "14.7.4",
+    "explanation": "UDP is connectionless: there is no handshake, window or ISN. The client simply picks a random (dynamic) source port number and sends the datagram to the well-known destination port of the service.",
+    "options": [
+      "The client sets the window size for the session.",
+      "The client sends an ISN to the server to start the 3-way handshake.",
+      "The client randomly selects a source port number.",
+      "The client sends a synchronization segment to begin the session."
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": 2,
+    "type": "choice",
+    "question": "Which transport layer feature is used to guarantee session establishment?",
+    "topic": "14.5.2",
+    "explanation": "TCP is connection-oriented and uses the three-way handshake (SYN, SYN-ACK, ACK) to establish a session before data is sent. UDP has no ACK flag and no sequence numbers.",
+    "options": [
+      "UDP ACK flag",
+      "TCP 3-way handshake",
+      "UDP sequence number",
+      "TCP port number"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 3,
+    "type": "choice",
+    "question": "What is the complete range of TCP and UDP well-known ports?",
+    "topic": "14.4.3",
+    "explanation": "Well-known ports are 0–1023, registered ports 1024–49151, and dynamic or private ports 49152–65535.",
+    "options": [
+      "0 to 255",
+      "0 to 1023",
+      "256 - 1023",
+      "1024 - 49151"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 4,
+    "type": "choice",
+    "question": "What is a socket?",
+    "topic": "14.4.2",
+    "explanation": "A socket is the combination of an IP address and a port number, for example 192.168.1.5:80. A pair of sockets (source and destination) identifies one conversation.",
+    "options": [
+      "the combination of the source and destination IP address and source and destination Ethernet address",
+      "the combination of a source IP address and port number or a destination IP address and port number",
+      "the combination of the source and destination sequence and acknowledgment numbers",
+      "the combination of the source and destination sequence numbers and port numbers"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 5,
+    "type": "choice",
+    "question": "A PC is downloading a large file from a server. The TCP window is 1000 bytes. The server is sending the file using 100-byte segments. How many segments will the server send before it requires an acknowledgment from the PC?",
+    "topic": "14.6.5",
+    "explanation": "With a window of 1000 bytes, the destination host accepts segments until all 1000 bytes of data have been received. Then the destination host sends an acknowledgment.",
+    "options": [
+      "1 segment",
+      "10 segments",
+      "100 segments",
+      "1000 segments"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 6,
+    "type": "choice",
+    "question": "Which factor determines TCP window size?",
+    "topic": "14.6.5",
+    "explanation": "Window is the number of bytes that the sender will send prior to expecting an acknowledgement from the destination device. The initial window is agreed upon during the session startup via the three-way handshake between source and destination. It is determined by how much data the destination device of a TCP session is able to accept and process at one time.",
+    "options": [
+      "the amount of data to be transmitted",
+      "the number of services included in the TCP segment",
+      "the amount of data the destination can process at one time",
+      "the amount of data the source is capable of sending at one time"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": 7,
+    "type": "choice",
+    "question": "What does a client do when it has UDP datagrams to send?",
+    "topic": "14.1.5",
+    "explanation": "When a client has UDP datagrams to send, it just sends the datagrams.",
+    "options": [
+      "It just sends the datagrams.",
+      "It queries the server to see if it is ready to receive data.",
+      "It sends a simplified three-way handshake to the server.",
+      "It sends to the server a segment with the SYN flag set to synchronize the conversation."
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 8,
+    "type": "choice",
+    "question": "Which three fields are used in a UDP segment header? (Choose three.)",
+    "topic": "14.3.2",
+    "explanation": "A UDP header consists of only the Source Port, Destination Port, Length, and Checksum fields. Sequence Number, Acknowledgment Number, and Window Size are TCP header fields.",
+    "options": [
+      "Window Size",
+      "Length",
+      "Source Port",
+      "Acknowledgment Number",
+      "Checksum",
+      "Sequence Number"
+    ],
+    "correct": [
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": 9,
+    "type": "choice",
+    "question": "What are two roles of the transport layer in data communication on a network? (Choose two.)",
+    "topic": "14.1.1",
+    "explanation": "The transport layer has several responsibilities. The primary responsibilities include the following:\nTracking the individual communication streams between applications on the source and destination hosts\nSegmenting data at the source and reassembling the data at the destination\nIdentifying the proper application for each communication stream through the use of port numbers",
+    "options": [
+      "identifying the proper application for each communication stream",
+      "tracking the individual communication between applications on the source and destination hosts",
+      "providing frame delimiting to identify bits making up a frame",
+      "performing a cyclic redundancy check on the frame for errors",
+      "providing the interface between applications and the underlying network over which messages are transmitted"
+    ],
+    "correct": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": 10,
+    "type": "choice",
+    "question": "What information is used by TCP to reassemble and reorder received segments?",
+    "topic": "14.6.1",
+    "explanation": "At the transport layer, TCP uses the sequence numbers in the header of each TCP segment to reassemble the segments into the correct order.",
+    "options": [
+      "port numbers",
+      "sequence numbers",
+      "acknowledgment numbers",
+      "fragment numbers"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 11,
+    "type": "choice",
+    "question": "What important information is added to the TCP/IP transport layer header to ensure communication and connectivity with a remote network device?",
+    "topic": "14.4.1",
+    "explanation": "The destination and source port numbers are used to identify exactly which protocol and process is requesting or responding to a request.",
+    "options": [
+      "timing and synchronization",
+      "destination and source port numbers",
+      "destination and source physical addresses",
+      "destination and source logical network addresses"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 12,
+    "type": "choice",
+    "question": "Which two characteristics are associated with UDP sessions? (Choose two.)",
+    "topic": "14.7.1",
+    "explanation": "TCP:\nProvides tracking of transmitted data segments\nDestination devices will acknowledge received data.\nSource devices will retransmit unacknowledged data.\nUDP\nDestination devices will not acknowledge received data\nHeaders use very little overhead and cause minimal delay.",
+    "options": [
+      "Destination devices receive traffic with minimal delay.",
+      "Transmitted data segments are tracked.",
+      "Destination devices reassemble messages and pass them to an application.",
+      "Received data is unacknowledged.",
+      "Unacknowledged data packets are retransmitted."
+    ],
+    "correct": [
+      0,
+      3
+    ]
+  },
+  {
+    "id": 13,
+    "type": "match",
+    "question": "A client application needs to terminate a TCP communication session with a server. Place the termination process steps in the order that they will occur. (Not all options are used.)",
+    "topic": "14.5.3",
+    "explanation": "In order to terminate a TCP session, the client sends to the server a segment with the FIN flag set. The server acknowledges the client by sending a segment with the ACK flag set. The server sends a FIN to the client to terminate the server to client session. The client acknowledges the termination by sending a segment with the ACK flag set.",
+    "pairs": [
+      {
+        "left": "client sends FIN",
+        "right": "step 1"
+      },
+      {
+        "left": "server sends ACK",
+        "right": "step 2"
+      },
+      {
+        "left": "server sends FIN",
+        "right": "step 3"
+      },
+      {
+        "left": "client sends ACK",
+        "right": "step 4"
+      },
+      {
+        "left": "client sends SYN",
+        "right": null
+      },
+      {
+        "left": "server sends SYN",
+        "right": null
+      }
+    ],
+    "note": "Pary przepisane z obrazka na stronie źródłowej. Drugi obrazek w źródle ma błędną kolejność (SYN zamiast FIN) – użyto poprawnej sekwencji zgodnej z wyjaśnieniem."
+  },
+  {
+    "id": 14,
+    "type": "choice",
+    "question": "Which flag in the TCP header is used in response to a received FIN in order to terminate connectivity between two network devices?",
+    "topic": "14.5.3",
+    "explanation": "In a TCP session, when a device has no more data to send, it will send a segment with the FIN flag set. The connected device that receives the segment will respond with an ACK to acknowledge that segment. The device that sent the ACK will then send a FIN message to close the connection it has with the other device. The sending of the FIN should be followed with the receipt of an ACK from the other device.",
+    "options": [
+      "FIN",
+      "ACK",
+      "SYN",
+      "RST"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 15,
+    "type": "choice",
+    "question": "Which protocol or service uses UDP for a client-to-server communication and TCP for server-to-server communication?",
+    "topic": "14.4.3",
+    "explanation": "Some applications may use both TCP and UDP. DNS uses UDP when clients send requests to a DNS server, and TCP when two DNS serves directly communicate.",
+    "options": [
+      "HTTP",
+      "FTP",
+      "DNS",
+      "SMTP"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": 16,
+    "type": "choice",
+    "question": "What is a characteristic of UDP?",
+    "topic": "14.7.2",
+    "explanation": "UDP has no way to reorder the datagrams into their transmission order, so UDP simply reassembles the data in the order it was received and forwards it to the application.",
+    "options": [
+      "UDP datagrams take the same path and arrive in the correct order at the destination.",
+      "Applications that use UDP are always considered unreliable.",
+      "UDP reassembles the received datagrams in the order they were received.",
+      "UDP only passes data to the network when the destination is ready to receive the data."
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": 17,
+    "type": "choice",
+    "question": "What kind of port must be requested from IANA in order to be used with a specific application?",
+    "topic": "14.4.3",
+    "explanation": "Registered ports (numbers 1024 to 49151) are assigned by IANA to a requesting entity to use with specific processes or applications. These processes are primarily individual applications that a user has chosen to install, rather than common applications that would receive a well-known port number. For example, Cisco has registered port 1985 for its Hot Standby Routing Protocol (HSRP) process.",
+    "options": [
+      "registered port",
+      "private port",
+      "dynamic port",
+      "source port"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 18,
+    "type": "choice",
+    "question": "Which three application layer protocols use TCP? (Choose three.)",
+    "topic": "14.2.4",
+    "explanation": "Some protocols require the reliable data transport that is provided by TCP. In addition, these protocols do not have real time communication requirements and can tolerate some data loss while minimizing protocol overhead. Examples of these protocols are SMTP, FTP, and HTTP.",
+    "options": [
+      "SMTP",
+      "FTP",
+      "SNMP",
+      "HTTP",
+      "TFTP",
+      "DHCP"
+    ],
+    "correct": [
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "id": 19,
+    "type": "choice",
+    "question": "Which three statements characterize UDP? (Choose three.)",
+    "topic": "14.7.1",
+    "explanation": "UDP is a simple protocol that provides the basic transport layer functions. It has much lower overhead than TCP because it is not connection-oriented and does not offer the sophisticated retransmission, sequencing, and flow control mechanisms that provide reliability.",
+    "options": [
+      "UDP provides basic connectionless transport layer functions.",
+      "UDP provides connection-oriented, fast transport of data at Layer 3.",
+      "UDP relies on application layer protocols for error detection.",
+      "UDP is a low overhead protocol that does not provide sequencing or flow control mechanisms.",
+      "UDP relies on IP for error detection and recovery.",
+      "UDP provides sophisticated flow control mechanisms."
+    ],
+    "correct": [
+      0,
+      2,
+      3
+    ]
+  },
+  {
+    "id": 20,
+    "type": "choice",
+    "question": "Which two fields are included in the TCP header but not in the UDP header? (Choose two.)",
+    "topic": "14.2.3",
+    "explanation": "The sequence number and window fields are included in the TCP header but not in the UDP header.",
+    "options": [
+      "window",
+      "checksum",
+      "source port",
+      "destination port",
+      "sequence number"
+    ],
+    "correct": [
+      0,
+      4
+    ]
+  },
+  {
+    "id": 21,
+    "type": "choice",
+    "question": "Which field in the TCP header indicates the status of the three-way handshake process?",
+    "topic": "14.5.4",
+    "explanation": "The value in the control bits field of theTCP header indicates the progress and status of the connection.",
+    "options": [
+      "window",
+      "reserved",
+      "checksum",
+      "control bits"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": 22,
+    "type": "choice",
+    "question": "Why does HTTP use TCP as the transport layer protocol?",
+    "topic": "14.1.6",
+    "explanation": "When a host requests a web page, transmission reliability and completeness must be guaranteed. Therefore, HTTP uses TCP as its transport layer protocol.",
+    "options": [
+      "to ensure the fastest possible download speed",
+      "because HTTP is a best-effort protocol",
+      "because transmission errors can be tolerated easily",
+      "because HTTP requires reliable delivery"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": 23,
+    "type": "choice",
+    "question": "Which two types of applications are best suited for UDP? (Choose two.)",
+    "topic": "14.1.6",
+    "explanation": "Applications that can tolerate some data loss, require a simple request and reply, and handle reliability themselves are best suited for UDP. UDP has low overhead and no requirement of reliability. TCP provides services for reliability, controlling data flow, and the reordering of segments.",
+    "options": [
+      "applications that need data flow control",
+      "applications that require reliable delivery",
+      "applications that handle reliability themselves",
+      "applications that need the reordering of segments",
+      "applications that can tolerate some data loss, but require little or no delay"
+    ],
+    "correct": [
+      2,
+      4
+    ]
+  },
+  {
+    "id": 24,
+    "type": "choice",
+    "question": "How are port numbers used in the TCP/IP encapsulation process?",
+    "topic": "14.4.1",
+    "explanation": "Both UDP and TCP use port numbers to provide a unique identifier for each conversation. Source port numbers are randomly generated and are used to track different conversations. Destination port numbers identify specific services by using either a default port number for the service or a port number that is assigned manually by a system administrator.",
+    "options": [
+      "Source port numbers and destination port numbers are not necessary when UDP is the transport layer protocol being used for the communication.",
+      "Source port and destination port numbers are randomly generated.",
+      "If multiple conversations occur that are using the same service, the source port number is used to track the separate conversations.",
+      "Destination port numbers are assigned automatically and cannot be changed."
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": 25,
+    "type": "choice",
+    "question": "In what two situations would UDP be better than TCP as the preferred transport protocol? (Choose two.)",
+    "topic": "14.1.6",
+    "explanation": "UDP is a very simple transport layer protocol that does not guarantee delivery. Devices on both ends of the conversation are not required to keep track of the conversation. UDP is used as the transport protocol for applications that need a speedy, best-effort delivery.",
+    "options": [
+      "when applications need to guarantee that a packet arrives intact, in sequence, and unduplicated",
+      "when a faster delivery mechanism is needed",
+      "when delivery overhead is not an issue",
+      "when applications do not need to guarantee delivery of the data",
+      "when destination port numbers are dynamic"
+    ],
+    "correct": [
+      1,
+      3
+    ]
+  },
+  {
+    "id": 26,
+    "type": "choice",
+    "question": "What are three responsibilities of the transport layer? (Choose three.)",
+    "topic": "14.1.2",
+    "explanation": "The transport layer has several responsibilities. Some of the primary responsibilities include the following:\nTracking the individual communication streams between applications on the source and destination hosts\nSegmenting data at the source and reassembling the data at the destination\nIdentifying the proper application for each communication stream through the use of port numbers\nMultiplexing the communications of multiple users or applications over a single network\nManaging the reliability requirements of applications",
+    "options": [
+      "meeting the reliability requirements of applications, if any",
+      "multiplexing multiple communication streams from many users or applications on the same network",
+      "identifying the applications and services on the client and server that should handle transmitted data",
+      "directing packets towards the destination network",
+      "formatting data into a compatible form for receipt by the destination devices",
+      "conducting error detection of the contents in frames"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": 27,
+    "type": "choice",
+    "question": "Which three statements describe a DHCP Discover message? (Choose three.)",
+    "topic": "15.4.7",
+    "explanation": "When a host configured to use DHCP powers up on a network it sends a DHCPDISCOVER message. FF-FF-FF-FF-FF-FF is the L2 broadcast address. A DHCP server replies with a unicast DHCPOFFER message back to the host.",
+    "options": [
+      "The source MAC address is 48 ones (FF-FF-FF-FF-FF-FF).",
+      "The destination IP address is 255.255.255.255.",
+      "The message comes from a server offering an IP address.",
+      "The message comes from a client seeking an IP address.",
+      "All hosts receive the message, but only a DHCP server replies.",
+      "Only the DHCP server receives the message."
+    ],
+    "correct": [
+      1,
+      3,
+      4
+    ]
+  },
+  {
+    "id": 28,
+    "type": "choice",
+    "question": "Which two protocols may devices use in the application process that sends email? (Choose two.)",
+    "topic": "15.3.2",
+    "explanation": "POP, POP3, and IMAP are protocols that are used to retrieve email from servers. SMTP is the default protocol that is used to send email. DNS may be used by the sender email server to find the address of the destination email server.",
+    "options": [
+      "HTTP",
+      "SMTP",
+      "POP",
+      "IMAP",
+      "DNS",
+      "POP3"
+    ],
+    "correct": [
+      1,
+      4
+    ]
+  },
+  {
+    "id": 29,
+    "type": "choice",
+    "question": "What is true about the Server Message Block protocol?",
+    "topic": "15.5.2",
+    "explanation": "The Server Message Block protocol is a protocol for file, printer, and directory sharing. Clients establish a long term connection to servers and when the connection is active, the resources can be accessed. Every SMB message has the same format. The use of SMB differs from FTP mainly in the length of the sessions. SMB messages can authenticate sessions.",
+    "options": [
+      "Different SMB message types have a different format.",
+      "Clients establish a long term connection to servers.",
+      "SMB messages cannot authenticate a session.",
+      "SMB uses the FTP protocol for communication."
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 30,
+    "type": "choice",
+    "question": "What is the function of the HTTP GET message?",
+    "topic": "15.3.2",
+    "explanation": "There are three common HTTP message types:\nGET - used by clients to request data from the web server\nPOST - used by clients to upload data to a web server\nPUT - used by clients to upload data to a web server",
+    "options": [
+      "to request an HTML page from a web server",
+      "to send error information from a web server to a web client",
+      "to upload content to a web server from a web client",
+      "to retrieve client email from an email server using TCP port 110"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 31,
+    "type": "choice",
+    "question": "Which OSI layer provides the interface between the applications used to communicate and the underlying network over which messages are transmitted?",
+    "topic": "15.1.1",
+    "explanation": "The application layer is the layer that is closest to the end user and provides the interface between the underlying network and the applications used to communicate.",
+    "options": [
+      "application",
+      "presentation",
+      "session",
+      "transport"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 32,
+    "type": "choice",
+    "question": "Which networking model is being used when an author uploads one chapter document to a file server of a book publisher?",
+    "topic": "15.2.1",
+    "explanation": "In the client/server network model, a network device assumes the role of server in order to provide a particular service such as file transfer and storage. In the client/server network model, a dedicated server does not have to be used, but if one is present, the network model being used is the client/server model. In contrast, a peer-to-peer network does not have a dedicated server.",
+    "options": [
+      "peer-to-peer",
+      "master-slave",
+      "client/server",
+      "point-to-point"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": 33,
+    "type": "choice",
+    "question": "What do the client/server and peer-to-peer network models have in common?",
+    "topic": "15.2.1",
+    "explanation": "In both the client/server and peer-to-peer network models, clients and servers exist. In peer-to-peer networks, no dedicated server exists, but a device can assume the server role to provide information to a device serving in the client role.",
+    "options": [
+      "Both models have dedicated servers.",
+      "Both models support devices in server and client roles.",
+      "Both models require the use of TCP/IP-based protocols.",
+      "Both models are used only in the wired network environment."
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 34,
+    "type": "choice",
+    "question": "In what networking model would eDonkey, eMule, BitTorrent, Bitcoin, and LionShare be used?",
+    "topic": "15.2.4",
+    "explanation": "In a peer-to-peer networking model, data is exchanged between two network devices without the use of a dedicated server. Peer-to-peer applications such as Shareaz, eDonkey, and Bitcoin allow one network device to assume the role of server, while one or more other network devices assume the role of client using the peer-to-peer application.",
+    "options": [
+      "peer-to-peer",
+      "client-based",
+      "master-slave",
+      "point-to-point"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 35,
+    "type": "choice",
+    "question": "What is a common protocol that is used with peer-to-peer applications such as WireShare, Bearshare, and Shareaza?",
+    "topic": "15.2.4",
+    "explanation": "The Gnutella protocol is used when one user shares an entire file with another user. A person would load a Gnutella-based application such as gtk-gnutella or WireShare and use that application to locate and access resources shared by others.",
+    "options": [
+      "Ethernet",
+      "Gnutella",
+      "POP",
+      "SMTP"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": 36,
+    "type": "choice",
+    "question": "What is a key characteristic of the peer-to-peer networking model?",
+    "topic": "15.2.2",
+    "explanation": "The peer-to-peer (P2P) networking model allows data, printer, and resource sharing without a dedicated server.",
+    "options": [
+      "wireless networking",
+      "social networking without the Internet",
+      "network printing using a print server",
+      "resource sharing without a dedicated server"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": 37,
+    "type": "choice",
+    "question": "The application layer of the TCP/IP model performs the functions of what three layers of the OSI model? (Choose three.)",
+    "topic": "15.1.1",
+    "explanation": "The network access layer of the TCP/IP model performs the same functions as the physical and data link layers of the OSI model. The internetwork layer equates to the network layer of the OSI model. The transport layers are the same in both models. The application layer of the TCP/IP model represents the session, presentation, and application layers of the OSI model.",
+    "options": [
+      "physical",
+      "session",
+      "network",
+      "presentation",
+      "data link",
+      "transport",
+      "application"
+    ],
+    "correct": [
+      1,
+      3,
+      6
+    ]
+  },
+  {
+    "id": 38,
+    "type": "choice",
+    "question": "What is an example of network communication that uses the client-server model?",
+    "topic": "15.2.1",
+    "explanation": "When a user types a domain name of a website into the address bar of a web browser, a workstation needs to send a DNS request to the DNS server for the name resolution process. This request is a client/server model application. The eMule application is P2P. Sharing a printer on a workstation is a peer-to-peer network. Using ARP is just a broadcast message sent by a host.",
+    "options": [
+      "A user uses eMule to download a file that is shared by a friend after the file location is determined.",
+      "A workstation initiates an ARP to find the MAC address of a receiving host.",
+      "A user prints a document by using a printer that is attached to a workstation of a coworker.",
+      "A workstation initiates a DNS request when the user types www.cisco.com in the address bar of a web browser."
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": 39,
+    "type": "choice",
+    "question": "Which layer in the TCP/IP model is used for formatting, compressing, and encrypting data?",
+    "topic": "15.1.1",
+    "explanation": "The application layer of the TCP/IP model performs the functions of three layers of the OSI model - application, presentation, and session. The application layer of the TCP/IP model is the layer that provides the interface between the applications, is responsible for formatting, compressing, and encrypting data, and is used to create and maintain dialogs between source and destination applications.",
+    "options": [
+      "internetwork",
+      "session",
+      "presentation",
+      "application",
+      "network access"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": 40,
+    "type": "choice",
+    "question": "What is an advantage of SMB over FTP?",
+    "topic": "15.5.2",
+    "explanation": "SMB and FTP are client/server protocols that are used for file transfer. SMB allows the connecting device to access resources as if they were on the local client device. SMB and FTP use the TCP protocol for connection establishment and they can transfer data in both directions. FTP requires two connections between the client and the server, one for commands and replies, the other for the actual file transfer.",
+    "options": [
+      "Only with SMB can data transfers occur in both directions.",
+      "Only SMB establishes two simultaneous connections with the client, making the data transfer faster.",
+      "SMB is more reliable than FTP because SMB uses TCP and FTP uses UDP.",
+      "SMB clients can establish a long-term connection to the server."
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": 41,
+    "type": "choice",
+    "question": "A manufacturing company subscribes to certain hosted services from its ISP. The services that are required include hosted world wide web, file transfer, and e-mail. Which protocols represent these three key applications? (Choose three.)",
+    "topic": "15.3.2",
+    "explanation": "The ISP uses the HTTP protocol in conjunction with hosting web pages, the FTP protocol with file transfers, and SMTP with e-mail. DNS is used to translate domain names to IP addresses. SNMP is used for network management traffic. DHCP ic commonly used to manage IP addressing.",
+    "options": [
+      "FTP",
+      "HTTP",
+      "DNS",
+      "SNMP",
+      "DHCP",
+      "SMTP"
+    ],
+    "correct": [
+      0,
+      1,
+      5
+    ]
+  },
+  {
+    "id": 42,
+    "type": "choice",
+    "question": "Which application layer protocol uses message types such as GET, PUT, and POST?",
+    "topic": "15.3.2",
+    "explanation": "The GET command is a client request for data from a web server. A PUT command uploads resources and content, such as images, to a web server. A POST command uploads data files to a web server.",
+    "options": [
+      "DNS",
+      "DHCP",
+      "SMTP",
+      "HTTP",
+      "POP3"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": 43,
+    "type": "choice",
+    "question": "What type of information is contained in a DNS MX record?",
+    "topic": "15.4.2",
+    "explanation": "MX, or mail exchange messages, are used to map a domain name to several mail exchange servers that all belong to the same domain.",
+    "options": [
+      "the FQDN of the alias used to identify a service",
+      "the IP address for an FQDN entry",
+      "the domain name mapped to mail exchange servers",
+      "the IP address of an authoritative name server"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": 44,
+    "type": "choice",
+    "question": "Which three protocols operate at the application layer of the TCP/IP model? (Choose three.)",
+    "topic": "15.1.3",
+    "explanation": "FTP, DHCP, and POP3 are application layer protocols. TCP and UDP are transport layer protocols. ARP is a network layer protocol.",
+    "options": [
+      "ARP",
+      "TCP",
+      "UDP",
+      "FTP",
+      "POP3",
+      "DHCP"
+    ],
+    "correct": [
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 45,
+    "type": "choice",
+    "question": "Which protocol is used by a client to communicate securely with a web server?",
+    "topic": "15.3.2",
+    "explanation": "HTTPS is a secure form of HTTP used to access web content hosted by a web server.",
+    "options": [
+      "SMTP",
+      "SMB",
+      "IMAP",
+      "HTTPS"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": 46,
+    "type": "choice",
+    "question": "Which applications or services allow hosts to act as client and server at the same time?",
+    "topic": "15.2.2",
+    "explanation": "P2P applications allow the clients to behave as servers if needed. When using authentication services, email exchange, and client/server applications, one host acts as server and the other acts as client at all times.",
+    "options": [
+      "client/server applications",
+      "email applications",
+      "P2P applications",
+      "authentication services"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": 47,
+    "type": "choice",
+    "question": "What are two characteristics of peer-to-peer networks? (Choose two.)",
+    "topic": "15.2.2",
+    "explanation": "Peer-to-peer networks have decentralized resources because every computer can serve as both a server and a client. One computer might assume the role of server for one transaction while acting as a client for another transaction. Peer-to-peer networks can share resources among network devices without the use of a dedicated server.",
+    "options": [
+      "scalability",
+      "one way data flow",
+      "decentralized resources",
+      "centralized user accounts",
+      "resource sharing without a dedicated server"
+    ],
+    "correct": [
+      2,
+      4
+    ]
+  },
+  {
+    "id": 48,
+    "type": "choice",
+    "question": "Which scenario describes a function provided by the transport layer?",
+    "topic": "14.1.2",
+    "explanation": "The source and destination port numbers are used to identify the correct application and window within that application.",
+    "options": [
+      "A student is using a classroom VoIP phone to call home. The unique identifier burned into the phone is a transport layer address used to contact another network device on the same network.",
+      "A student is playing a short web-based movie with sound. The movie and sound are encoded within the transport layer header.",
+      "A student has two web browser windows open in order to access two web sites. The transport layer ensures the correct web page is delivered to the correct browser window.",
+      "A corporate worker is accessing a web server located on a corporate network. The transport layer formats the screen so the web page appears properly no matter what device is being used to view the web site."
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": 49,
+    "type": "choice",
+    "question": "Which three layers of the OSI model provide similar network services to those provided by the application layer of the TCP/IP model? (Choose three.)",
+    "topic": "15.1.1",
+    "explanation": "The three upper layers of the OSI model, the session, presentation, and application layers, provide application services similar to those provided by the TCP/IP model application layer. Lower layers of the OSI model are more concerned with data flow.",
+    "options": [
+      "physical layer",
+      "session layer",
+      "transport layer",
+      "application layer",
+      "presentation layer",
+      "data link layer"
+    ],
+    "correct": [
+      1,
+      3,
+      4
+    ]
+  },
+  {
+    "id": 50,
+    "type": "choice",
+    "question": "A PC that is communicating with a web server has a TCP window size of 6,000 bytes when sending data and a packet size of 1,500 bytes. Which byte of information will the web server acknowledge after it has received two packets of data from the PC?",
+    "topic": "14.6.3",
+    "explanation": "Two packets carry bytes 1–3000. The acknowledgment number is the next byte the receiver expects, so the server acknowledges with 3001.",
+    "options": [
+      "3001",
+      "6001",
+      "4500",
+      "6000"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 51,
+    "type": "choice",
+    "question": "A PC that is communicating with a web server has a TCP window size of 6,000 bytes when sending data and a packet size of 1,500 bytes. Which byte of information will the web server acknowledge after it has received three packets of data from the PC?",
+    "topic": "14.6.3",
+    "explanation": "Three packets carry bytes 1–4500. The acknowledgment number is the next byte the receiver expects, so the server acknowledges with 4501.",
+    "options": [
+      "4501",
+      "6001",
+      "6000",
+      "4500"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 52,
+    "type": "choice",
+    "question": "A PC that is communicating with a web server has a TCP window size of 6,000 bytes when sending data and a packet size of 1,500 bytes. Which byte of information will the web server acknowledge after it has received four packets of data from the PC?",
+    "topic": "14.6.3",
+    "explanation": "Four packets carry bytes 1–6000, which fills the 6,000-byte window. The acknowledgment number is the next byte the receiver expects, so the server acknowledges with 6001.",
+    "options": [
+      "6001",
+      "3001",
+      "1501",
+      "1500"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 53,
+    "type": "choice",
+    "question": "A client creates a packet to send to a server. The client is requesting TFTP service. What number will be used as the destination port number in the sending packet?",
+    "topic": "15.5.1",
+    "explanation": "Well-known destination ports: FTP 21 (control), SSH 22, Telnet 23, SMTP 25, DNS 53, DHCP 67 (server), TFTP 69, HTTP 80, POP3 110, SNMP 161, HTTPS 443.",
+    "options": [
+      "69",
+      "67",
+      "53",
+      "80"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 54,
+    "type": "choice",
+    "question": "A client creates a packet to send to a server. The client is requesting FTP service. What number will be used as the destination port number in the sending packet?",
+    "topic": "15.5.1",
+    "explanation": "Well-known destination ports: FTP 21 (control), SSH 22, Telnet 23, SMTP 25, DNS 53, DHCP 67 (server), TFTP 69, HTTP 80, POP3 110, SNMP 161, HTTPS 443.",
+    "options": [
+      "21",
+      "69",
+      "67",
+      "80"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 55,
+    "type": "choice",
+    "question": "A client creates a packet to send to a server. The client is requesting SSH service. What number will be used as the destination port number in the sending packet?",
+    "topic": "15.5.1",
+    "explanation": "Well-known destination ports: FTP 21 (control), SSH 22, Telnet 23, SMTP 25, DNS 53, DHCP 67 (server), TFTP 69, HTTP 80, POP3 110, SNMP 161, HTTPS 443.",
+    "options": [
+      "22",
+      "69",
+      "67",
+      "80"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 56,
+    "type": "choice",
+    "question": "A client creates a packet to send to a server. The client is requesting HTTP service. What number will be used as the destination port number in the sending packet?",
+    "topic": "15.1.3",
+    "explanation": "Well-known destination ports: FTP 21 (control), SSH 22, Telnet 23, SMTP 25, DNS 53, DHCP 67 (server), TFTP 69, HTTP 80, POP3 110, SNMP 161, HTTPS 443.",
+    "options": [
+      "80",
+      "67",
+      "53",
+      "69"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 57,
+    "type": "choice",
+    "question": "A client creates a packet to send to a server. The client is requesting POP3 service. What number will be used as the destination port number in the sending packet?",
+    "topic": "15.3.4",
+    "explanation": "Well-known destination ports: FTP 21 (control), SSH 22, Telnet 23, SMTP 25, DNS 53, DHCP 67 (server), TFTP 69, HTTP 80, POP3 110, SNMP 161, HTTPS 443.",
+    "options": [
+      "110",
+      "67",
+      "53",
+      "69",
+      "443",
+      "161",
+      "80"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 58,
+    "type": "choice",
+    "question": "A client creates a packet to send to a server. The client is requesting telnet service. What number will be used as the destination port number in the sending packet?",
+    "topic": "15.1.3",
+    "explanation": "Well-known destination ports: FTP 21 (control), SSH 22, Telnet 23, SMTP 25, DNS 53, DHCP 67 (server), TFTP 69, HTTP 80, POP3 110, SNMP 161, HTTPS 443.",
+    "options": [
+      "23",
+      "443",
+      "161",
+      "110"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 59,
+    "type": "choice",
+    "question": "A client creates a packet to send to a server. The client is requesting SNMP service. What number will be used as the destination port number in the sending packet?",
+    "topic": "15.1.3",
+    "explanation": "Well-known destination ports: FTP 21 (control), SSH 22, Telnet 23, SMTP 25, DNS 53, DHCP 67 (server), TFTP 69, HTTP 80, POP3 110, SNMP 161, HTTPS 443.",
+    "options": [
+      "161",
+      "443",
+      "110",
+      "80"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 60,
+    "type": "choice",
+    "question": "A client creates a packet to send to a server. The client is requesting SMTP service. What number will be used as the destination port number in the sending packet?",
+    "topic": "15.1.3",
+    "explanation": "Well-known destination ports: FTP 21 (control), SSH 22, Telnet 23, SMTP 25, DNS 53, DHCP 67 (server), TFTP 69, HTTP 80, POP3 110, SNMP 161, HTTPS 443.",
+    "options": [
+      "25",
+      "443",
+      "161",
+      "110"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": 61,
+    "type": "choice",
+    "question": "A client creates a packet to send to a server. The client is requesting HTTPS service. What number will be used as the destination port number in the sending packet?",
+    "topic": "15.3.2",
+    "explanation": "Well-known destination ports: FTP 21 (control), SSH 22, Telnet 23, SMTP 25, DNS 53, DHCP 67 (server), TFTP 69, HTTP 80, POP3 110, SNMP 161, HTTPS 443.",
+    "options": [
+      "443",
+      "161",
+      "110",
+      "80"
+    ],
+    "correct": [
+      0
+    ]
+  }
+]

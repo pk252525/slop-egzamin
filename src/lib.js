@@ -1,6 +1,11 @@
-import questions from './data/questions.json';
+import examList from './data/exams.json';
 
-export { questions };
+export const EXAMS = examList;
+export const examById = (id) => EXAMS.find((e) => e.id === id);
+
+// question data is split per exam and loaded on demand
+const loaders = import.meta.glob(['./data/*.json', '!./data/exams.json'], { import: 'default' });
+export const loadQuestions = (id) => loaders[`./data/${id}.json`]();
 
 export const NONE = '— nie pasuje do niczego —';
 
@@ -47,11 +52,16 @@ export function isComplete(q, answer) {
   return q.pairs.every((_, i) => (answer || {})[i]);
 }
 
-const KEY = 'slop-egzamin-stats-v1';
+// Progress: { [examId]: { [questionId]: { seen, ok, streak, last } } }
+const KEY = 'grypser-stats-v2';
+const OLD_KEY = 'slop-egzamin-stats-v1'; // single exam (modules 1–3)
 
 export function loadStats() {
   try {
-    return JSON.parse(localStorage.getItem(KEY)) || {};
+    const stats = JSON.parse(localStorage.getItem(KEY));
+    if (stats) return stats;
+    const old = JSON.parse(localStorage.getItem(OLD_KEY));
+    return old ? { 'm1-3': old } : {};
   } catch {
     return {};
   }
@@ -65,10 +75,22 @@ export function saveStats(stats) {
   }
 }
 
-export function record(stats, id, ok) {
-  const s = stats[id] || { seen: 0, ok: 0, streak: 0 };
+export function record(stats, examId, id, ok) {
+  const exam = stats[examId] || {};
+  const s = exam[id] || { seen: 0, ok: 0, streak: 0 };
   return {
     ...stats,
-    [id]: { seen: s.seen + 1, ok: s.ok + (ok ? 1 : 0), streak: ok ? s.streak + 1 : 0, last: ok },
+    [examId]: { ...exam, [id]: { seen: s.seen + 1, ok: s.ok + (ok ? 1 : 0), streak: ok ? s.streak + 1 : 0, last: ok } },
   };
 }
+
+export function summary(examStats = {}) {
+  const list = Object.values(examStats);
+  return {
+    seen: list.length,
+    mastered: list.filter((s) => s.streak >= 2).length,
+    wrong: list.filter((s) => s.last === false).length,
+  };
+}
+
+export const imageUrl = (path) => import.meta.env.BASE_URL + path;

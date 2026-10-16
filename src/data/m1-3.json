@@ -322,6 +322,8 @@
     "question": "A technician configures a switch with these commands:",
     "topic": "2.7.4",
     "explanation": "For a switch to have an IP address, a switch virtual interface must be configured. This allows the switch to be managed remotely over the network.",
+    "exhibit": "SwitchA(config)# interface vlan 1\nSwitchA(config-if)# ip address 192.168.1.1 255.255.255.0\nSwitchA(config-if)# no shutdown",
+    "question2": "What is the technician configuring?",
     "options": [
       "Telnet access",
       "SVI",
@@ -330,9 +332,7 @@
     ],
     "correct": [
       1
-    ],
-    "exhibit": "SwitchA(config)# interface vlan 1\nSwitchA(config-if)# ip address 192.168.1.1 255.255.255.0\nSwitchA(config-if)# no shutdown",
-    "question2": "What is the technician configuring?"
+    ]
   },
   {
     "id": 20,

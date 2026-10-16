@@ -1,4 +1,19 @@
-import { NONE } from './lib';
+import { NONE, imageUrl } from './lib';
+
+export function Exhibit({ q }) {
+  return (
+    <>
+      {q.images?.map((src) => (
+        <figure key={src} className="figure">
+          <a href={imageUrl(src)} target="_blank" rel="noreferrer" title="Otwórz w pełnym rozmiarze">
+            <img src={imageUrl(src)} alt="Ilustracja do pytania" loading="lazy" />
+          </a>
+        </figure>
+      ))}
+      {q.exhibit && <pre className="exhibit">{q.exhibit}</pre>}
+    </>
+  );
+}
 
 export function QuestionMeta({ q }) {
   return (
@@ -18,7 +33,7 @@ export default function Question({ q, answer, onChange, revealed }) {
     <div className="question">
       <QuestionMeta q={q} />
       <h2>{q.question}</h2>
-      {q.exhibit && <pre className="exhibit">{q.exhibit}</pre>}
+      <Exhibit q={q} />
       {q.question2 && <h2>{q.question2}</h2>}
 
       {q.type === 'choice' ? (
